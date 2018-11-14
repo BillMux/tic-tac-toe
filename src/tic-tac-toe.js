@@ -11,7 +11,3 @@ var TicTacToe = function() {
 TicTacToe.prototype.chooseWeapon = function(choice) {
   this.weaponChoice = choice
 };
-
-TicTacToe.prototype.revealTable = function() {
-  
-};
