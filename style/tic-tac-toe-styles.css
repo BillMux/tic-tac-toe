@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+#arena {
+  empty-cells: show;
+  width: 90%;
+}
+
+td {
+  border: 2px solid black;
+  width: 30%;
+  height: 30%;
+  position: relative;
+}

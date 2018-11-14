@@ -1,13 +1,14 @@
 'use strict';
 
 describe('game', function() {
-  var game
+  var game;
 
   beforeEach(function() {
     game = new TicTacToe();
   });
 
-  it('gives player a choice of noughts or crosses to play', function() {
-    expect(game.weaponChoice).toEqual(['O', 'X'])
+  it('gives player a choice of noughts or crosses', function() {
+    game.chooseWeapon('X')
+    expect(game.weaponChoice).toEqual('X')
   });
 });
