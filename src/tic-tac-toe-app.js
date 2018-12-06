@@ -4,6 +4,7 @@ $(document).ready(function() {
   $('#noughts').click(function() {
     ticTacToe.chooseWeapon('O');
   });
+  
   $('#crosses').click(function() {
     ticTacToe.chooseWeapon('X');
   });
