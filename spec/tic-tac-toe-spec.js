@@ -4,11 +4,11 @@ describe('game', function() {
   var game;
 
   beforeEach(function() {
-    game = new TicTacToe();
+    var game = new TicTacToe();
   });
 
   it('gives player a choice of noughts or crosses', function() {
-    game.chooseWeapon('X')
-    expect(game.weaponChoice).toEqual('X')
+    game.getWeapon('X');
+    expect(game.weapon).toEqual('X');
   });
 });
