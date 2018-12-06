@@ -2,35 +2,38 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="js/jquery-3.1.0.js"></script>
-    <script src="src/TicTacToe.js"></script>
-    <script src="src/TicTacToeApp.js"></script>
+    <!-- <script src="js/jquery-3.1.0.js"></script> -->
+    <script src="src/tic-tac-toe.js"></script>
     <link rel="stylesheet" type="text/css" href="style/tic-tac-toe-styles.css">
     <title>Tic Tac Toe</title>
   </head>
   <body>
     <h1>TicTacToe</h1>
-    <p>
-    <h2>Choose your weapon!</h2>
-    <input id="noughts" type="button" value="O"></input>
-    <input id="crosses" type="button" value="X"></input>
-    </p>
-    <table width="300" height="300" border="1" cellspacing="0" align="center">
+    <div id="start_game">
+      <h2>Choose your weapon!</h2>
+      <input id="noughts" type="button" value="O" onclick="startGame('O')">
+      <input id="crosses" type="button" value="X" onclick="startGame('X')">
+    </div>
+    <table align="center">
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
       </tr>
     </table>
+    <div class="end_game">
+      <h1>GAME OVER</h1>
+      <a href="./index.html" onclick="resetGame()">Play again?</a>
+    </div>
   </body>
 </html>
